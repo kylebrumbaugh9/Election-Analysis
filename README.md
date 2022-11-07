@@ -54,6 +54,16 @@ _Here is the code I used to determine the results per each candidate. This was v
   
 ## Election Audit Summary
 
+I believe that this code could be repurposed and reused for any election, but there may need to be some modifications.
 
+First, my code makes an assumption that there are only 3 columns in the data source and that the County is in the second column and that the Candidate is in the third column. If this code was applied to a federal election's data set, for example, there may be "state" as an additional column which means that the code would need to be reworked.
+
+Second, my code makes the assumption that the data source is a .csv file; if it is not a .csv file, then the code will need to be refactored to handle that data type. 
+
+Third, my code makes the assumption that popular vote determines the winner of the election. In the case of an election where a different mechanism is used to determine a winner (i.e. the Electoral College), then my code may not give the proper winner (Gore v. Bush, Clinton v. Trump, etc). 
+
+Finally, my code does not take into account ties; if there had been two counties or candidates with the exact same number of votes, then I believe my code would error. 
+
+Overall, I think this is a good piece of starter code to use for elections on a widespread application, but some tweaks are definitely necessary prior to accepting this on a grand scale. 
 
 
